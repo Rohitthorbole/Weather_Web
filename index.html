@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="nav">
+            <div class="title">
+                <span class="maintitle">Weather</span>
+                <span class="subtitle">What is my city weather?</span>
+            </div>
+            <div class="searchbar">
+                <span class="search">
+                    <input type="text" id="city-input" placeholder="my city" oninput="hideWeatherDisplay()" onkeypress="checkEnter(event)">
+                    <img src="./media/searchlogo.svg" alt="" class="logo" onclick="fetchWeatherData()">
+                </span>
+            </div>
+        </div>
+        <div class="main">
+            <div class="display" id="weather-display">
+                <div class="temp">
+                    <span><img src="media/temp.svg" alt="Temperature"></span>
+                    <span id="temp-value"></span>
+                </div>
+                <div class="rain">
+                    <span><img src="media/rain.svg" alt="Humidity"></span>
+                    <span id="rain-value"></span>
+                </div>
+                <div class="wind">
+                    <span><img src="media/wind.svg" alt="Wind Speed"></span>
+                    <span id="wind-value"></span>
+                </div>
+            </div>
+            <div id="error-message" class="error-message"></div>
+        </div>
+        <div class="footer">
+            <div class="contact">
+                <span><a href="https://www.linkedin.com/in/rohit-thorbole-907533284/"><img src="./media/linkedin.svg" alt=""></a></span>
+                <span><a href="https://www.instagram.com/rohitthorbole_45/"><img src="./media/instagram.svg" alt=""></a></span>
+                <span><a href="https://github.com/Rohitthorbole"><img src="./media/github.svg" alt=""></a></span>
+                <span><a href="https://wa.me/qr/DWZGZAUAEHSEM1"><img src="./media/whatsapp.svg" alt=""></a></span>
+            </div>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>
