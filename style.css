@@ -110,6 +110,9 @@ body {
     .container {
         width: 50vw;
     }
+    .nav{
+        margin-top: 50px;
+    }
 }
 
 @media screen and (max-width: 512px) {
