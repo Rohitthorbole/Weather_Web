@@ -9,7 +9,7 @@ async function fetchWeatherData() {
         errorMessage.textContent = 'Please enter a city name';
         return;
     }
-    const geoApiUrl = `http://api.openweathermap.org/geo/1.0/direct?q=${city}&limit=1&appid=${apiKey}`;
+    const geoApiUrl = `https://api.openweathermap.org/geo/1.0/direct?q=${city}&limit=1&appid=${apiKey}`;
 
     try {
         const geoResponse = await fetch(geoApiUrl);
