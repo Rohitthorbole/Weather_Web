@@ -116,4 +116,7 @@ body {
     .container {
         width: 80vw;
     }
+    .nav{
+        margin-top: 50px;
+    }
 }
